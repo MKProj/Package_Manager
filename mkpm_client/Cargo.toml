@@ -1,0 +1,15 @@
+[package]
+name = "mkpm_client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = {version = "0.11", features = ["json"]}
+serde = "1.0.136"
+serde_derive = "1.0.136"
+tokio = {version = "1.16.1", features = ["full"]}
+mkpm-sl = {version = "0.1.0", path = "../mkpm-sl"}
+structopt = "0.3.26"
+toml = "0.5.8"

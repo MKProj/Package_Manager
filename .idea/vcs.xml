@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/mkpm-sl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mkpm_client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mkpm_server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mkpm_sl" vcs="Git" />
+  </component>
+</project>
