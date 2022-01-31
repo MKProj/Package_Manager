@@ -60,7 +60,7 @@ async fn main() -> Result<(), Error>{
         let a: Address = toml::from_str(&s).unwrap();
         addr = a.address;
     } else {
-        addr = String::from("mkpm_server.mkproj.com/");
+        addr = String::from("mkpm-server.mkproj.com/");
     }
     let args = CLI::from_args();
     match args{

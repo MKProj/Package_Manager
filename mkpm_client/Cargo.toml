@@ -1,6 +1,6 @@
 [package]
 name = "mkpm-cl"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 description = "Client application for MKProject Package Manager"
