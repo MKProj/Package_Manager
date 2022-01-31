@@ -1,4 +1,4 @@
-use crate::{ReadJson, Retrieve, Search};
+use crate::{List, ReadJson, Retrieve, Search};
 use serde_derive::{Deserialize, Serialize};
 use serde_json::from_str;
 use std::io;
@@ -8,6 +8,15 @@ use std::io::{Cursor, Error};
 pub struct Book {
     pub title: String,
     pub short: String,
+}
+
+impl List for Book{
+    fn list(item: &Vec<Self>) where Self: Sized {
+        println!("//// AVAILABLE BOOKS");
+        for i in item{
+            println!("// {}", i.title);
+        }
+    }
 }
 
 impl ReadJson for Book {

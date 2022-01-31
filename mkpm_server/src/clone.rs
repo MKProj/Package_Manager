@@ -9,3 +9,8 @@ pub fn get_clone(repo: &str) -> Result<Json<Clone>, Error> {
     let repo = Clone::search(repo, &vec_repo).unwrap();
     Ok(Json(repo))
 }
+
+#[get("/clone/list")]
+pub fn get_clone_list() -> Result<Json<Vec<Clone>>, Error>{
+    Ok(Json(Clone::read_json("json/repo.json")?))
+}

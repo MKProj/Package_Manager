@@ -492,19 +492,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "mkpm-sl"
-version = "0.1.0"
-dependencies = [
- "git2",
- "reqwest",
- "serde",
- "serde_derive",
- "serde_json",
- "toml",
-]
-
-[[package]]
-name = "mkpm_client"
+name = "mkpm"
 version = "0.1.0"
 dependencies = [
  "mkpm-sl",
@@ -513,6 +501,18 @@ dependencies = [
  "serde_derive",
  "structopt",
  "tokio",
+ "toml",
+]
+
+[[package]]
+name = "mkpm-sl"
+version = "0.1.0"
+dependencies = [
+ "git2",
+ "reqwest",
+ "serde",
+ "serde_derive",
+ "serde_json",
  "toml",
 ]
 

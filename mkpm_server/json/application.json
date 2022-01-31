@@ -1,0 +1,6 @@
+[
+  {
+    "name": "mkproj_book",
+    "targets": ["windows", "debian", "linux"]
+  }
+]

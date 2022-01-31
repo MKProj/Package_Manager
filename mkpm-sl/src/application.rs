@@ -1,4 +1,4 @@
-use crate::{ReadJson, Retrieve, Search};
+use crate::{List, ReadJson, Retrieve, Search};
 use serde_derive::{Deserialize, Serialize};
 use serde_json::from_str;
 use std::io;
@@ -8,6 +8,15 @@ use std::io::{Cursor, Error, ErrorKind};
 pub struct Application {
     pub name: String,
     pub targets: Vec<String>,
+}
+
+impl List for Application{
+    fn list(item: &Vec<Self>) where Self: Sized {
+        println!("//// AVAILABLE APPLICATIONS");
+        for i in item{
+            println!("// {} => {:?}", &i.name, &i.targets)
+        }
+    }
 }
 
 impl ReadJson for Application {

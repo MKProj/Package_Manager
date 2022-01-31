@@ -1,4 +1,4 @@
-use crate::{ReadJson, Search};
+use crate::{List, ReadJson, Search};
 use serde_derive::{Deserialize, Serialize};
 use serde_json::from_str;
 use std::fs::read_to_string;
@@ -9,6 +9,16 @@ use std::process::Command;
 pub struct CargoApp {
     pub name: String,
 }
+
+impl List for CargoApp{
+    fn list(item: &Vec<Self>) where Self: Sized {
+        println!("//// AVAILABLE CARGO APPS");
+        for i in item{
+            println!("// {}", i.name);
+        }
+    }
+}
+
 
 impl Search for CargoApp {
     fn search(to_check: &str, object: &Vec<Self>) -> Result<Self, String>

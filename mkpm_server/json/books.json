@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Rust-Basics",
+    "short": "rust_b"
+  },
+  {
+    "title": "Git-Basics",
+    "short": "git_bs"
+  },
+  {
+    "title": "C++ Basics",
+    "short": "cpp_bs"
+  }
+]

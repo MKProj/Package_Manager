@@ -1,4 +1,4 @@
-use crate::{ReadJson, Search};
+use crate::{List, ReadJson, Search};
 use git2::Error as GitError;
 use git2::Repository;
 use serde_derive::{Deserialize, Serialize};
@@ -9,6 +9,14 @@ use std::io::Error;
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct Clone {
     pub repo: String,
+}
+impl List for Clone{
+    fn list(item: &Vec<Self>) where Self: Sized {
+        println!("//// AVAILABLE REPOS");
+        for i in item{
+            println!("// {}", i.repo)
+        }
+    }
 }
 
 impl ReadJson for Clone {

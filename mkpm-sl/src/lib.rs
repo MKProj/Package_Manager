@@ -21,7 +21,7 @@ pub trait ReadJson {
 }
 
 pub trait List {
-    fn list(item: &Vec<Self>) -> Result<(), std::io::Error>
+    fn list(item: &Vec<Self>)
     where
         Self: Sized;
 }

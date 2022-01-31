@@ -9,3 +9,8 @@ pub fn get_install(name: &str) -> Result<Json<CargoApp>, Error>{
     let app = CargoApp::search(name, &apps).unwrap();
     Ok(Json(app))
 }
+
+#[get("/install/list")]
+pub fn get_install_list() -> Result<Json<Vec<CargoApp>>, Error> {
+    Ok(Json(CargoApp::read_json("json/cargo.json")?))
+}
