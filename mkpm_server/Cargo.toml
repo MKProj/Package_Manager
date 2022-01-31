@@ -10,4 +10,4 @@ rocket = { version = "0.5.0-rc.1" , features = ["json"]}
 serde = "1.0.136"
 serde_derive = "1.0.136"
 serde_json = "1.0.78"
-mkpm-sl = {version = "0.1.0", path = "../mkpm-sl"}
+mkpm-sl = "0.1.0"

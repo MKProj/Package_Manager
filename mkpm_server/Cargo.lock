@@ -710,6 +710,8 @@ dependencies = [
 [[package]]
 name = "mkpm-sl"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b7403c641c3b0a1cc0fd68c46e6a514f1b1ce1abce48b9e082c6b9394ee66d7d"
 dependencies = [
  "git2",
  "reqwest",
